@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPerfil.Designer.cs">
+      <DependentUpon>TelaPerfil.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +82,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TelaPerfil.resx">
+      <DependentUpon>TelaPerfil.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagem do WhatsApp de 2024-10-22 à%28s%29 07.46.59_25f225f2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOTIPO HORIZONTAL VERDE- CÉU DE GRÃOS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
