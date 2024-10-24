@@ -27,5 +27,11 @@ namespace TelasDesktopPIM
             Cadastro cadastro = new Cadastro();
             cadastro.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TelaPerfil telaPerfil = new TelaPerfil(); 
+            telaPerfil.ShowDialog();
+        }
     }
 }
