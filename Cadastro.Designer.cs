@@ -63,6 +63,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.LightGreen;
             this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LOGOTIPO_BRANCO___CÉU_DE_GRÃOS;
             this.pictureBox1.Location = new System.Drawing.Point(-2, 1);
             this.pictureBox1.Name = "pictureBox1";

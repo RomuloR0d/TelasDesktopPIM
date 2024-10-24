@@ -10,28 +10,21 @@ using System.Windows.Forms;
 
 namespace TelasDesktopPIM
 {
-    public partial class Form1 : Form
+    public partial class TelaPerfil : Form
     {
-        public Form1()
+        public TelaPerfil()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Cadastro cadastro = new Cadastro();
-            cadastro.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TelaPerfil telaPerfil = new TelaPerfil(); 
-            telaPerfil.ShowDialog();
+
         }
     }
 }

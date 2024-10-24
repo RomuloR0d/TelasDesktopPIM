@@ -87,6 +87,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -139,10 +140,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.LightGreen;
             this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LOGOTIPO_BRANCO___CÉU_DE_GRÃOS;
-            this.pictureBox1.Location = new System.Drawing.Point(-8, -28);
+            this.pictureBox1.Location = new System.Drawing.Point(-8, -5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(487, 449);
+            this.pictureBox1.Size = new System.Drawing.Size(487, 457);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
