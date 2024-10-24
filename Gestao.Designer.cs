@@ -1,6 +1,6 @@
 ﻿namespace TelasDesktopPIM
 {
-    partial class TelaPerfil
+    partial class Gestao
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonGestão = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSair = new System.Windows.Forms.Button();
             this.buttonPerfil = new System.Windows.Forms.Button();
@@ -36,22 +35,11 @@
             this.buttonRelatorio = new System.Windows.Forms.Button();
             this.buttonVendas = new System.Windows.Forms.Button();
             this.buttonProducao = new System.Windows.Forms.Button();
+            this.buttonGestão = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // buttonGestão
-            // 
-            this.buttonGestão.BackColor = System.Drawing.Color.ForestGreen;
-            this.buttonGestão.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGestão.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonGestão.Location = new System.Drawing.Point(6, 22);
-            this.buttonGestão.Name = "buttonGestão";
-            this.buttonGestão.Size = new System.Drawing.Size(93, 26);
-            this.buttonGestão.TabIndex = 1;
-            this.buttonGestão.Text = "Gestão";
-            this.buttonGestão.UseVisualStyleBackColor = false;
-            this.buttonGestão.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -65,9 +53,8 @@
             this.panel1.Controls.Add(this.buttonGestão);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(798, 66);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.Size = new System.Drawing.Size(798, 63);
+            this.panel1.TabIndex = 3;
             // 
             // buttonSair
             // 
@@ -92,7 +79,7 @@
             this.buttonPerfil.TabIndex = 4;
             this.buttonPerfil.Text = "Perfil";
             this.buttonPerfil.UseVisualStyleBackColor = false;
-            this.buttonPerfil.Click += new System.EventHandler(this.button4_Click);
+            this.buttonPerfil.Click += new System.EventHandler(this.buttonPerfil_Click);
             // 
             // pictureBox1
             // 
@@ -142,28 +129,55 @@
             this.buttonProducao.UseVisualStyleBackColor = false;
             this.buttonProducao.Click += new System.EventHandler(this.buttonProducao_Click);
             // 
-            // TelaPerfil
+            // buttonGestão
+            // 
+            this.buttonGestão.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonGestão.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGestão.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonGestão.Location = new System.Drawing.Point(6, 22);
+            this.buttonGestão.Name = "buttonGestão";
+            this.buttonGestão.Size = new System.Drawing.Size(93, 26);
+            this.buttonGestão.TabIndex = 1;
+            this.buttonGestão.Text = "Gestão";
+            this.buttonGestão.UseVisualStyleBackColor = false;
+            this.buttonGestão.Click += new System.EventHandler(this.buttonGestão_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(460, 192);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "gestão";
+            // 
+            // Gestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Name = "TelaPerfil";
+            this.Name = "Gestao";
+            this.Text = "Gestao";
+            this.Load += new System.EventHandler(this.Gestao_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonGestão;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonSair;
+        private System.Windows.Forms.Button buttonPerfil;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonRelatorio;
         private System.Windows.Forms.Button buttonVendas;
         private System.Windows.Forms.Button buttonProducao;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonPerfil;
-        private System.Windows.Forms.Button buttonSair;
+        private System.Windows.Forms.Button buttonGestão;
+        private System.Windows.Forms.Label label1;
     }
 }

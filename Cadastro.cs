@@ -27,5 +27,10 @@ namespace TelasDesktopPIM
             Form1 Login = new Form1();
             Login.ShowDialog();
         }
+
+        private void Cadastro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

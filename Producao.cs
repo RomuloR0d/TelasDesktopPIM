@@ -10,33 +10,22 @@ using System.Windows.Forms;
 
 namespace TelasDesktopPIM
 {
-    public partial class TelaPerfil : Form
+    public partial class Producao : Form
     {
-        public TelaPerfil()
+        public Producao()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonGestão_Click(object sender, EventArgs e)
         {
             Gestao Gestao = new Gestao();
             Gestao.ShowDialog();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void buttonProducao_Click(object sender, EventArgs e)
-        {
-            Producao Producao = new Producao();
-            Producao.ShowDialog();
         }
 
         private void buttonVendas_Click(object sender, EventArgs e)
