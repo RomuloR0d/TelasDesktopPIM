@@ -36,7 +36,10 @@
             this.buttonVendas = new System.Windows.Forms.Button();
             this.buttonProducao = new System.Windows.Forms.Button();
             this.buttonGestão = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelGestao = new System.Windows.Forms.Label();
+            this.buttonGerFuncionario = new System.Windows.Forms.Button();
+            this.buttonGerClient = new System.Windows.Forms.Button();
+            this.buttonGerProdut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -143,21 +146,54 @@
             this.buttonGestão.UseVisualStyleBackColor = false;
             this.buttonGestão.Click += new System.EventHandler(this.buttonGestão_Click);
             // 
-            // label1
+            // labelGestao
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(460, 192);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "gestão";
+            this.labelGestao.AutoSize = true;
+            this.labelGestao.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGestao.ForeColor = System.Drawing.Color.DarkGreen;
+            this.labelGestao.Location = new System.Drawing.Point(242, 84);
+            this.labelGestao.Name = "labelGestao";
+            this.labelGestao.Size = new System.Drawing.Size(96, 28);
+            this.labelGestao.TabIndex = 4;
+            this.labelGestao.Text = "Gestão";
+            // 
+            // buttonGerFuncionario
+            // 
+            this.buttonGerFuncionario.Location = new System.Drawing.Point(218, 150);
+            this.buttonGerFuncionario.Name = "buttonGerFuncionario";
+            this.buttonGerFuncionario.Size = new System.Drawing.Size(159, 23);
+            this.buttonGerFuncionario.TabIndex = 5;
+            this.buttonGerFuncionario.Text = "Gerenciar Funcionarios";
+            this.buttonGerFuncionario.UseVisualStyleBackColor = true;
+            this.buttonGerFuncionario.Click += new System.EventHandler(this.buttonGerFuncionario_Click);
+            // 
+            // buttonGerClient
+            // 
+            this.buttonGerClient.Location = new System.Drawing.Point(218, 204);
+            this.buttonGerClient.Name = "buttonGerClient";
+            this.buttonGerClient.Size = new System.Drawing.Size(159, 23);
+            this.buttonGerClient.TabIndex = 6;
+            this.buttonGerClient.Text = "Gerenciar Fornecedores";
+            this.buttonGerClient.UseVisualStyleBackColor = true;
+            // 
+            // buttonGerProdut
+            // 
+            this.buttonGerProdut.Location = new System.Drawing.Point(218, 257);
+            this.buttonGerProdut.Name = "buttonGerProdut";
+            this.buttonGerProdut.Size = new System.Drawing.Size(159, 23);
+            this.buttonGerProdut.TabIndex = 7;
+            this.buttonGerProdut.Text = "Gerenciar Produtos";
+            this.buttonGerProdut.UseVisualStyleBackColor = true;
             // 
             // Gestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonGerProdut);
+            this.Controls.Add(this.buttonGerClient);
+            this.Controls.Add(this.buttonGerFuncionario);
+            this.Controls.Add(this.labelGestao);
             this.Controls.Add(this.panel1);
             this.Name = "Gestao";
             this.Text = "Gestao";
@@ -179,6 +215,9 @@
         private System.Windows.Forms.Button buttonVendas;
         private System.Windows.Forms.Button buttonProducao;
         private System.Windows.Forms.Button buttonGestão;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelGestao;
+        private System.Windows.Forms.Button buttonGerFuncionario;
+        private System.Windows.Forms.Button buttonGerClient;
+        private System.Windows.Forms.Button buttonGerProdut;
     }
 }

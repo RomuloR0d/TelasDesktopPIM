@@ -50,5 +50,12 @@ namespace TelasDesktopPIM
             Relatorio Relatorio = new Relatorio();
             Relatorio.ShowDialog();
         }
+
+        private void buttonGerFuncionario_Click(object sender, EventArgs e)
+        {
+            GerenciarFunc funcionarios = new GerenciarFunc();
+            funcionarios.ShowDialog();
+     
+        }
     }
 }
