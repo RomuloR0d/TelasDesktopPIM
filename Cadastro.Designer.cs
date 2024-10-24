@@ -229,6 +229,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Cadastro";
             this.Text = "Cadastro";
+            this.Load += new System.EventHandler(this.Cadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
