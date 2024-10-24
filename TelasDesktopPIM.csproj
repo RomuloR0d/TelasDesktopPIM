@@ -70,6 +70,12 @@
     <Compile Include="Gestao.Designer.cs">
       <DependentUpon>Gestao.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListClientes.Designer.cs">
+      <DependentUpon>ListClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Producao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gestao.resx">
       <DependentUpon>Gestao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListClientes.resx">
+      <DependentUpon>ListClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Producao.resx">
       <DependentUpon>Producao.cs</DependentUpon>
