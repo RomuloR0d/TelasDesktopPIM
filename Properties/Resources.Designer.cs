@@ -73,6 +73,16 @@ namespace TelasDesktopPIM.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoHorizontal_250 {
+            get {
+                object obj = ResourceManager.GetObject("LogoHorizontal-250", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGOTIPO_BRANCO___CÉU_DE_GRÃOS {
             get {
                 object obj = ResourceManager.GetObject("LOGOTIPO BRANCO - CÉU DE GRÃOS", resourceCulture);

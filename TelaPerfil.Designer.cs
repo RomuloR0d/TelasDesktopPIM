@@ -30,10 +30,12 @@
         {
             this.buttonGestão = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,9 +45,9 @@
             this.buttonGestão.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonGestão.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGestão.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonGestão.Location = new System.Drawing.Point(23, 20);
+            this.buttonGestão.Location = new System.Drawing.Point(6, 22);
             this.buttonGestão.Name = "buttonGestão";
-            this.buttonGestão.Size = new System.Drawing.Size(111, 25);
+            this.buttonGestão.Size = new System.Drawing.Size(93, 26);
             this.buttonGestão.TabIndex = 1;
             this.buttonGestão.Text = "Gestão";
             this.buttonGestão.UseVisualStyleBackColor = false;
@@ -54,6 +56,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGreen;
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
@@ -65,50 +69,76 @@
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button1
+            // button3
             // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(162, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 25);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Produção";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button3.BackColor = System.Drawing.Color.ForestGreen;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.Control;
+            this.button3.Location = new System.Drawing.Point(354, 22);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(93, 26);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Relatorio";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.ForestGreen;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(301, 20);
+            this.button2.Location = new System.Drawing.Point(244, 22);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 25);
+            this.button2.Size = new System.Drawing.Size(93, 26);
             this.button2.TabIndex = 3;
             this.button2.Text = "Vendas";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // button1
             // 
-            this.button3.BackColor = System.Drawing.Color.ForestGreen;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(441, 20);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 25);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Relatorio";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(126, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 26);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Produção";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LOGOTIPO_HORIZONTAL_VERDE__CÉU_DE_GRÃOS;
-            this.pictureBox1.Location = new System.Drawing.Point(569, 11);
+            this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LogoHorizontal_250;
+            this.pictureBox1.Location = new System.Drawing.Point(558, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 51);
+            this.pictureBox1.Size = new System.Drawing.Size(195, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.ForestGreen;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.Control;
+            this.button4.Location = new System.Drawing.Point(459, 22);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(93, 26);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Perfil";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.ForestGreen;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Control;
+            this.button5.Location = new System.Drawing.Point(759, 22);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(39, 26);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Sair";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // TelaPerfil
             // 
@@ -131,5 +161,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
