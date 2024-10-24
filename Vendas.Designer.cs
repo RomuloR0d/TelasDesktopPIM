@@ -78,6 +78,7 @@
             this.buttonPerfil.TabIndex = 4;
             this.buttonPerfil.Text = "Perfil";
             this.buttonPerfil.UseVisualStyleBackColor = false;
+            this.buttonPerfil.Click += new System.EventHandler(this.buttonPerfil_Click);
             // 
             // pictureBox1
             // 
@@ -100,6 +101,7 @@
             this.buttonRelatorio.TabIndex = 3;
             this.buttonRelatorio.Text = "Relatorio";
             this.buttonRelatorio.UseVisualStyleBackColor = false;
+            this.buttonRelatorio.Click += new System.EventHandler(this.buttonRelatorio_Click);
             // 
             // buttonVendas
             // 
@@ -136,6 +138,7 @@
             this.buttonGestão.TabIndex = 1;
             this.buttonGestão.Text = "Gestão";
             this.buttonGestão.UseVisualStyleBackColor = false;
+            this.buttonGestão.Click += new System.EventHandler(this.buttonGestão_Click);
             // 
             // Vendas
             // 

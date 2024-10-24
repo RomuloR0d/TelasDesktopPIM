@@ -79,6 +79,7 @@
             this.buttonPerfil.TabIndex = 4;
             this.buttonPerfil.Text = "Perfil";
             this.buttonPerfil.UseVisualStyleBackColor = false;
+            this.buttonPerfil.Click += new System.EventHandler(this.buttonPerfil_Click);
             // 
             // pictureBox1
             // 
@@ -101,6 +102,7 @@
             this.buttonRelatorio.TabIndex = 3;
             this.buttonRelatorio.Text = "Relatorio";
             this.buttonRelatorio.UseVisualStyleBackColor = false;
+            this.buttonRelatorio.Click += new System.EventHandler(this.buttonRelatorio_Click);
             // 
             // buttonVendas
             // 
@@ -126,13 +128,14 @@
             this.buttonProducao.TabIndex = 3;
             this.buttonProducao.Text = "Produção";
             this.buttonProducao.UseVisualStyleBackColor = false;
+            this.buttonProducao.Click += new System.EventHandler(this.buttonProducao_Click);
             // 
             // buttonGestão
             // 
             this.buttonGestão.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonGestão.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGestão.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonGestão.Location = new System.Drawing.Point(6, 22);
+            this.buttonGestão.Location = new System.Drawing.Point(11, 22);
             this.buttonGestão.Name = "buttonGestão";
             this.buttonGestão.Size = new System.Drawing.Size(93, 26);
             this.buttonGestão.TabIndex = 1;

@@ -98,6 +98,7 @@
             this.buttonPerfil.TabIndex = 4;
             this.buttonPerfil.Text = "Perfil";
             this.buttonPerfil.UseVisualStyleBackColor = false;
+            this.buttonPerfil.Click += new System.EventHandler(this.buttonPerfil_Click);
             // 
             // pictureBox1
             // 
@@ -132,6 +133,7 @@
             this.buttonVendas.TabIndex = 3;
             this.buttonVendas.Text = "Vendas";
             this.buttonVendas.UseVisualStyleBackColor = false;
+            this.buttonVendas.Click += new System.EventHandler(this.buttonVendas_Click);
             // 
             // buttonProducao
             // 
@@ -144,6 +146,7 @@
             this.buttonProducao.TabIndex = 3;
             this.buttonProducao.Text = "Produção";
             this.buttonProducao.UseVisualStyleBackColor = false;
+            this.buttonProducao.Click += new System.EventHandler(this.buttonProducao_Click);
             // 
             // buttonGestão
             // 
@@ -156,6 +159,7 @@
             this.buttonGestão.TabIndex = 1;
             this.buttonGestão.Text = "Gestão";
             this.buttonGestão.UseVisualStyleBackColor = false;
+            this.buttonGestão.Click += new System.EventHandler(this.buttonGestão_Click);
             // 
             // Relatorio
             // 
