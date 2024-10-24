@@ -151,7 +151,7 @@
             this.labelGestao.AutoSize = true;
             this.labelGestao.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGestao.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelGestao.Location = new System.Drawing.Point(242, 84);
+            this.labelGestao.Location = new System.Drawing.Point(313, 100);
             this.labelGestao.Name = "labelGestao";
             this.labelGestao.Size = new System.Drawing.Size(96, 28);
             this.labelGestao.TabIndex = 4;
@@ -159,7 +159,7 @@
             // 
             // buttonGerFuncionario
             // 
-            this.buttonGerFuncionario.Location = new System.Drawing.Point(218, 150);
+            this.buttonGerFuncionario.Location = new System.Drawing.Point(289, 166);
             this.buttonGerFuncionario.Name = "buttonGerFuncionario";
             this.buttonGerFuncionario.Size = new System.Drawing.Size(159, 23);
             this.buttonGerFuncionario.TabIndex = 5;
@@ -169,7 +169,7 @@
             // 
             // buttonGerClient
             // 
-            this.buttonGerClient.Location = new System.Drawing.Point(218, 204);
+            this.buttonGerClient.Location = new System.Drawing.Point(289, 220);
             this.buttonGerClient.Name = "buttonGerClient";
             this.buttonGerClient.Size = new System.Drawing.Size(159, 23);
             this.buttonGerClient.TabIndex = 6;
@@ -178,7 +178,7 @@
             // 
             // buttonGerProdut
             // 
-            this.buttonGerProdut.Location = new System.Drawing.Point(218, 257);
+            this.buttonGerProdut.Location = new System.Drawing.Point(289, 273);
             this.buttonGerProdut.Name = "buttonGerProdut";
             this.buttonGerProdut.Size = new System.Drawing.Size(159, 23);
             this.buttonGerProdut.TabIndex = 7;
