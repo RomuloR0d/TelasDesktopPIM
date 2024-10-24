@@ -102,6 +102,7 @@
             this.buttonRelatorio.TabIndex = 3;
             this.buttonRelatorio.Text = "Relatorio";
             this.buttonRelatorio.UseVisualStyleBackColor = false;
+            this.buttonRelatorio.Click += new System.EventHandler(this.buttonRelatorio_Click);
             // 
             // buttonVendas
             // 

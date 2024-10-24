@@ -44,5 +44,11 @@ namespace TelasDesktopPIM
             Vendas vendas = new Vendas();
             vendas.ShowDialog();
         }
+
+        private void buttonRelatorio_Click(object sender, EventArgs e)
+        {
+            Relatorio Relatorio = new Relatorio();
+            Relatorio.ShowDialog();
+        }
     }
 }

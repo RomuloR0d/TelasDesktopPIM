@@ -24,7 +24,8 @@ namespace TelasDesktopPIM
 
         private void buttonPerfil_Click(object sender, EventArgs e)
         {
-
+            TelaPerfil perfil = new TelaPerfil();
+            perfil.ShowDialog();
         }
 
         private void buttonGestão_Click(object sender, EventArgs e)
@@ -42,6 +43,12 @@ namespace TelasDesktopPIM
         {
             Vendas vendas = new Vendas();
             vendas.ShowDialog();
+        }
+
+        private void buttonRelatorio_Click(object sender, EventArgs e)
+        {
+            Relatorio Relatorio = new Relatorio();
+            Relatorio.ShowDialog();
         }
     }
 }
