@@ -110,5 +110,8 @@
   <ItemGroup>
     <None Include="Resources\LOGOTIPO HORIZONTAL VERDE- CÉU DE GRÃOS.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoHorizontal-250.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
