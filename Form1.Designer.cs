@@ -74,7 +74,7 @@
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(100, 13);
             this.textBoxUsuario.TabIndex = 6;
-            this.textBoxUsuario.Text = "Usuario";
+            this.textBoxUsuario.Text = "E-mail";
             this.textBoxUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
