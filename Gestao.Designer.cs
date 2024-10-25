@@ -155,6 +155,7 @@
             this.buttonGerProducao.TabIndex = 8;
             this.buttonGerProducao.Text = "Gerenciar Produção";
             this.buttonGerProducao.UseVisualStyleBackColor = true;
+            this.buttonGerProducao.Click += new System.EventHandler(this.buttonGerProducao_Click);
             // 
             // Gestao
             // 

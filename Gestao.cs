@@ -52,5 +52,11 @@ namespace TelasDesktopPIM
             GesProdutos produtos = new GesProdutos();
             produtos.ShowDialog();
         }
+
+        private void buttonGerProducao_Click(object sender, EventArgs e)
+        {
+            GesProducoes producoes = new GesProducoes();
+            producoes.ShowDialog();
+        }
     }
 }
