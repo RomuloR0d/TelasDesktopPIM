@@ -127,7 +127,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(169, 21);
             this.textBox3.TabIndex = 30;
-            this.textBox3.Text = "DD/MM/AAAA";
             // 
             // textBox2
             // 
