@@ -31,15 +31,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSair = new System.Windows.Forms.Button();
             this.buttonPerfil = new System.Windows.Forms.Button();
-            this.buttonRelatorio = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonVendas = new System.Windows.Forms.Button();
-            this.buttonProducao = new System.Windows.Forms.Button();
             this.buttonGestão = new System.Windows.Forms.Button();
             this.labelGestao = new System.Windows.Forms.Label();
             this.buttonGerFuncionario = new System.Windows.Forms.Button();
             this.buttonGerClient = new System.Windows.Forms.Button();
             this.buttonGerProdut = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonGerProducao = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,9 +49,7 @@
             this.panel1.Controls.Add(this.buttonSair);
             this.panel1.Controls.Add(this.buttonPerfil);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.buttonRelatorio);
             this.panel1.Controls.Add(this.buttonVendas);
-            this.panel1.Controls.Add(this.buttonProducao);
             this.panel1.Controls.Add(this.buttonGestão);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
@@ -76,7 +73,7 @@
             this.buttonPerfil.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonPerfil.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPerfil.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonPerfil.Location = new System.Drawing.Point(459, 22);
+            this.buttonPerfil.Location = new System.Drawing.Point(381, 22);
             this.buttonPerfil.Name = "buttonPerfil";
             this.buttonPerfil.Size = new System.Drawing.Size(93, 26);
             this.buttonPerfil.TabIndex = 4;
@@ -84,25 +81,22 @@
             this.buttonPerfil.UseVisualStyleBackColor = false;
             this.buttonPerfil.Click += new System.EventHandler(this.buttonPerfil_Click);
             // 
-            // buttonRelatorio
+            // pictureBox1
             // 
-            this.buttonRelatorio.BackColor = System.Drawing.Color.ForestGreen;
-            this.buttonRelatorio.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRelatorio.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonRelatorio.Location = new System.Drawing.Point(354, 22);
-            this.buttonRelatorio.Name = "buttonRelatorio";
-            this.buttonRelatorio.Size = new System.Drawing.Size(93, 26);
-            this.buttonRelatorio.TabIndex = 3;
-            this.buttonRelatorio.Text = "Relatorio";
-            this.buttonRelatorio.UseVisualStyleBackColor = false;
-            this.buttonRelatorio.Click += new System.EventHandler(this.buttonRelatorio_Click);
+            this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LogoHorizontal_250;
+            this.pictureBox1.Location = new System.Drawing.Point(533, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(195, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // buttonVendas
             // 
             this.buttonVendas.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonVendas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVendas.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonVendas.Location = new System.Drawing.Point(244, 22);
+            this.buttonVendas.Location = new System.Drawing.Point(239, 22);
             this.buttonVendas.Name = "buttonVendas";
             this.buttonVendas.Size = new System.Drawing.Size(93, 26);
             this.buttonVendas.TabIndex = 3;
@@ -110,25 +104,12 @@
             this.buttonVendas.UseVisualStyleBackColor = false;
             this.buttonVendas.Click += new System.EventHandler(this.buttonVendas_Click);
             // 
-            // buttonProducao
-            // 
-            this.buttonProducao.BackColor = System.Drawing.Color.ForestGreen;
-            this.buttonProducao.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonProducao.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonProducao.Location = new System.Drawing.Point(126, 22);
-            this.buttonProducao.Name = "buttonProducao";
-            this.buttonProducao.Size = new System.Drawing.Size(93, 26);
-            this.buttonProducao.TabIndex = 3;
-            this.buttonProducao.Text = "Produção";
-            this.buttonProducao.UseVisualStyleBackColor = false;
-            this.buttonProducao.Click += new System.EventHandler(this.buttonProducao_Click);
-            // 
             // buttonGestão
             // 
             this.buttonGestão.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonGestão.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGestão.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonGestão.Location = new System.Drawing.Point(6, 22);
+            this.buttonGestão.Location = new System.Drawing.Point(103, 22);
             this.buttonGestão.Name = "buttonGestão";
             this.buttonGestão.Size = new System.Drawing.Size(93, 26);
             this.buttonGestão.TabIndex = 1;
@@ -175,21 +156,21 @@
             this.buttonGerProdut.Text = "Gerenciar Produtos";
             this.buttonGerProdut.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // buttonGerProducao
             // 
-            this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LogoHorizontal_250;
-            this.pictureBox1.Location = new System.Drawing.Point(558, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(195, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.buttonGerProducao.Location = new System.Drawing.Point(289, 325);
+            this.buttonGerProducao.Name = "buttonGerProducao";
+            this.buttonGerProducao.Size = new System.Drawing.Size(159, 23);
+            this.buttonGerProducao.TabIndex = 8;
+            this.buttonGerProducao.Text = "Gerenciar Produção";
+            this.buttonGerProducao.UseVisualStyleBackColor = true;
             // 
             // Gestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonGerProducao);
             this.Controls.Add(this.buttonGerProdut);
             this.Controls.Add(this.buttonGerClient);
             this.Controls.Add(this.buttonGerFuncionario);
@@ -211,13 +192,12 @@
         private System.Windows.Forms.Button buttonSair;
         private System.Windows.Forms.Button buttonPerfil;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonRelatorio;
         private System.Windows.Forms.Button buttonVendas;
-        private System.Windows.Forms.Button buttonProducao;
         private System.Windows.Forms.Button buttonGestão;
         private System.Windows.Forms.Label labelGestao;
         private System.Windows.Forms.Button buttonGerFuncionario;
         private System.Windows.Forms.Button buttonGerClient;
         private System.Windows.Forms.Button buttonGerProdut;
+        private System.Windows.Forms.Button buttonGerProducao;
     }
 }
