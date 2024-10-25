@@ -129,32 +129,41 @@
             // 
             // buttonGerClient
             // 
+            this.buttonGerClient.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonGerClient.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGerClient.ForeColor = System.Drawing.Color.Snow;
             this.buttonGerClient.Location = new System.Drawing.Point(283, 178);
             this.buttonGerClient.Name = "buttonGerClient";
             this.buttonGerClient.Size = new System.Drawing.Size(159, 23);
             this.buttonGerClient.TabIndex = 6;
             this.buttonGerClient.Text = "Gerenciar Clientes";
-            this.buttonGerClient.UseVisualStyleBackColor = true;
+            this.buttonGerClient.UseVisualStyleBackColor = false;
             this.buttonGerClient.Click += new System.EventHandler(this.buttonGerClient_Click);
             // 
             // buttonGerProdut
             // 
+            this.buttonGerProdut.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonGerProdut.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGerProdut.ForeColor = System.Drawing.Color.Snow;
             this.buttonGerProdut.Location = new System.Drawing.Point(283, 231);
             this.buttonGerProdut.Name = "buttonGerProdut";
             this.buttonGerProdut.Size = new System.Drawing.Size(159, 23);
             this.buttonGerProdut.TabIndex = 7;
             this.buttonGerProdut.Text = "Gerenciar Produtos";
-            this.buttonGerProdut.UseVisualStyleBackColor = true;
+            this.buttonGerProdut.UseVisualStyleBackColor = false;
             this.buttonGerProdut.Click += new System.EventHandler(this.buttonGerProdut_Click);
             // 
             // buttonGerProducao
             // 
+            this.buttonGerProducao.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonGerProducao.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGerProducao.ForeColor = System.Drawing.Color.Snow;
             this.buttonGerProducao.Location = new System.Drawing.Point(283, 283);
             this.buttonGerProducao.Name = "buttonGerProducao";
             this.buttonGerProducao.Size = new System.Drawing.Size(159, 23);
             this.buttonGerProducao.TabIndex = 8;
             this.buttonGerProducao.Text = "Gerenciar Produção";
-            this.buttonGerProducao.UseVisualStyleBackColor = true;
+            this.buttonGerProducao.UseVisualStyleBackColor = false;
             this.buttonGerProducao.Click += new System.EventHandler(this.buttonGerProducao_Click);
             // 
             // Gestao
