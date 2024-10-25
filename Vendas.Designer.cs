@@ -168,7 +168,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 48);
             this.button1.TabIndex = 47;
-            this.button1.Text = "Cadastrar pedido";
+            this.button1.Text = "Novo pedido";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label3
