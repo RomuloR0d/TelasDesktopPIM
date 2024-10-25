@@ -47,5 +47,11 @@ namespace TelasDesktopPIM
             funcionarios.ShowDialog();
      
         }
+
+        private void buttonGerClient_Click(object sender, EventArgs e)
+        {
+            ListClientes clientes = new ListClientes();
+            clientes.ShowDialog();
+        }
     }
 }

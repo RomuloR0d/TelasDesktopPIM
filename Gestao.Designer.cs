@@ -146,6 +146,7 @@
             this.buttonGerClient.TabIndex = 6;
             this.buttonGerClient.Text = "Gerenciar Clientes";
             this.buttonGerClient.UseVisualStyleBackColor = true;
+            this.buttonGerClient.Click += new System.EventHandler(this.buttonGerClient_Click);
             // 
             // buttonGerProdut
             // 

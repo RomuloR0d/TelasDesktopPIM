@@ -33,11 +33,6 @@ namespace TelasDesktopPIM
 
         }
 
-        private void buttonProducao_Click(object sender, EventArgs e)
-        {
-            Producao Producao = new Producao();
-            Producao.ShowDialog();
-        }
 
         private void buttonVendas_Click(object sender, EventArgs e)
         {
@@ -45,10 +40,6 @@ namespace TelasDesktopPIM
             vendas.ShowDialog();
         }
 
-        private void buttonRelatorio_Click(object sender, EventArgs e)
-        {
-            Relatorio Relatorio = new Relatorio();
-            Relatorio.ShowDialog();
-        }
+
     }
 }

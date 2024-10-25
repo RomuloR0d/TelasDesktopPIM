@@ -33,9 +33,7 @@
             this.buttonSair = new System.Windows.Forms.Button();
             this.buttonPerfil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonRelatorio = new System.Windows.Forms.Button();
             this.buttonVendas = new System.Windows.Forms.Button();
-            this.buttonProducao = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,9 +57,7 @@
             this.panel1.Controls.Add(this.buttonSair);
             this.panel1.Controls.Add(this.buttonPerfil);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.buttonRelatorio);
             this.panel1.Controls.Add(this.buttonVendas);
-            this.panel1.Controls.Add(this.buttonProducao);
             this.panel1.Controls.Add(this.buttonGestão);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
@@ -104,19 +100,6 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonRelatorio
-            // 
-            this.buttonRelatorio.BackColor = System.Drawing.Color.ForestGreen;
-            this.buttonRelatorio.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRelatorio.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonRelatorio.Location = new System.Drawing.Point(354, 22);
-            this.buttonRelatorio.Name = "buttonRelatorio";
-            this.buttonRelatorio.Size = new System.Drawing.Size(93, 26);
-            this.buttonRelatorio.TabIndex = 3;
-            this.buttonRelatorio.Text = "Relatorio";
-            this.buttonRelatorio.UseVisualStyleBackColor = false;
-            this.buttonRelatorio.Click += new System.EventHandler(this.buttonRelatorio_Click);
-            // 
             // buttonVendas
             // 
             this.buttonVendas.BackColor = System.Drawing.Color.ForestGreen;
@@ -129,19 +112,6 @@
             this.buttonVendas.Text = "Vendas";
             this.buttonVendas.UseVisualStyleBackColor = false;
             this.buttonVendas.Click += new System.EventHandler(this.buttonVendas_Click);
-            // 
-            // buttonProducao
-            // 
-            this.buttonProducao.BackColor = System.Drawing.Color.ForestGreen;
-            this.buttonProducao.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonProducao.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonProducao.Location = new System.Drawing.Point(126, 22);
-            this.buttonProducao.Name = "buttonProducao";
-            this.buttonProducao.Size = new System.Drawing.Size(93, 26);
-            this.buttonProducao.TabIndex = 3;
-            this.buttonProducao.Text = "Produção";
-            this.buttonProducao.UseVisualStyleBackColor = false;
-            this.buttonProducao.Click += new System.EventHandler(this.buttonProducao_Click);
             // 
             // TelaPerfil
             // 
@@ -160,9 +130,7 @@
 
         private System.Windows.Forms.Button buttonGestão;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button buttonRelatorio;
         private System.Windows.Forms.Button buttonVendas;
-        private System.Windows.Forms.Button buttonProducao;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonPerfil;
         private System.Windows.Forms.Button buttonSair;

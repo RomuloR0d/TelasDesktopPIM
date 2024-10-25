@@ -76,20 +76,8 @@
     <Compile Include="ListClientes.Designer.cs">
       <DependentUpon>ListClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Producao.Designer.cs">
-      <DependentUpon>Producao.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Relatorio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Relatorio.Designer.cs">
-      <DependentUpon>Relatorio.cs</DependentUpon>
-    </Compile>
     <Compile Include="TelaPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +105,6 @@
     <EmbeddedResource Include="ListClientes.resx">
       <DependentUpon>ListClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Producao.resx">
-      <DependentUpon>Producao.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -130,9 +115,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Relatorio.resx">
-      <DependentUpon>Relatorio.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TelaPerfil.resx">
       <DependentUpon>TelaPerfil.cs</DependentUpon>
     </EmbeddedResource>
