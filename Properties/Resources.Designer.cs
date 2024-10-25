@@ -63,6 +63,16 @@ namespace TelasDesktopPIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ic_lixeira_70 {
+            get {
+                object obj = ResourceManager.GetObject("ic-lixeira-70", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Imagem_do_WhatsApp_de_2024_10_22_à_s__07_46_59_25f225f2 {
             get {
                 object obj = ResourceManager.GetObject("Imagem do WhatsApp de 2024-10-22 à(s) 07.46.59_25f225f2", resourceCulture);

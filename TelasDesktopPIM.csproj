@@ -179,5 +179,8 @@
   <ItemGroup>
     <None Include="Resources\LOGOTIPO VERDE - CÉU DE GRÃOS.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic-lixeira-70.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
