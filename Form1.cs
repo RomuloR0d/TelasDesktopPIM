@@ -33,5 +33,10 @@ namespace TelasDesktopPIM
             TelaPerfil telaPerfil = new TelaPerfil(); 
             telaPerfil.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
