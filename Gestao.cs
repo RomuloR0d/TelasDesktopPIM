@@ -46,5 +46,11 @@ namespace TelasDesktopPIM
             ListClientes clientes = new ListClientes();
             clientes.ShowDialog();
         }
+
+        private void buttonGerProdut_Click(object sender, EventArgs e)
+        {
+            GesProdutos produtos = new GesProdutos();
+            produtos.ShowDialog();
+        }
     }
 }
