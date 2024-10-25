@@ -82,6 +82,7 @@
             this.buttonPerfil.TabIndex = 4;
             this.buttonPerfil.Text = "Perfil";
             this.buttonPerfil.UseVisualStyleBackColor = false;
+            this.buttonPerfil.Click += new System.EventHandler(this.buttonPerfil_Click);
             // 
             // pictureBox1
             // 
@@ -118,6 +119,7 @@
             this.buttonGestão.TabIndex = 1;
             this.buttonGestão.Text = "Gestão";
             this.buttonGestão.UseVisualStyleBackColor = false;
+            this.buttonGestão.Click += new System.EventHandler(this.buttonGestão_Click);
             // 
             // textBox3
             // 

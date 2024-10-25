@@ -19,12 +19,25 @@ namespace TelasDesktopPIM
 
         private void buttonVendas_Click(object sender, EventArgs e)
         {
-
+            Vendas vendas = new Vendas();
+            vendas.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonGestão_Click(object sender, EventArgs e)
+        {
+            Gestao gestao = new Gestao();
+            gestao.ShowDialog();
+        }
+
+        private void buttonPerfil_Click(object sender, EventArgs e)
+        {
+            TelaPerfil perfil = new TelaPerfil();
+            perfil.ShowDialog();
         }
     }
 }
