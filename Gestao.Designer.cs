@@ -35,7 +35,6 @@
             this.buttonVendas = new System.Windows.Forms.Button();
             this.buttonGestão = new System.Windows.Forms.Button();
             this.labelGestao = new System.Windows.Forms.Label();
-            this.buttonGerFuncionario = new System.Windows.Forms.Button();
             this.buttonGerClient = new System.Windows.Forms.Button();
             this.buttonGerProdut = new System.Windows.Forms.Button();
             this.buttonGerProducao = new System.Windows.Forms.Button();
@@ -128,19 +127,9 @@
             this.labelGestao.TabIndex = 4;
             this.labelGestao.Text = "Gestão";
             // 
-            // buttonGerFuncionario
-            // 
-            this.buttonGerFuncionario.Location = new System.Drawing.Point(289, 166);
-            this.buttonGerFuncionario.Name = "buttonGerFuncionario";
-            this.buttonGerFuncionario.Size = new System.Drawing.Size(159, 23);
-            this.buttonGerFuncionario.TabIndex = 5;
-            this.buttonGerFuncionario.Text = "Gerenciar Funcionarios";
-            this.buttonGerFuncionario.UseVisualStyleBackColor = true;
-            this.buttonGerFuncionario.Click += new System.EventHandler(this.buttonGerFuncionario_Click);
-            // 
             // buttonGerClient
             // 
-            this.buttonGerClient.Location = new System.Drawing.Point(289, 220);
+            this.buttonGerClient.Location = new System.Drawing.Point(283, 178);
             this.buttonGerClient.Name = "buttonGerClient";
             this.buttonGerClient.Size = new System.Drawing.Size(159, 23);
             this.buttonGerClient.TabIndex = 6;
@@ -150,7 +139,7 @@
             // 
             // buttonGerProdut
             // 
-            this.buttonGerProdut.Location = new System.Drawing.Point(289, 273);
+            this.buttonGerProdut.Location = new System.Drawing.Point(283, 231);
             this.buttonGerProdut.Name = "buttonGerProdut";
             this.buttonGerProdut.Size = new System.Drawing.Size(159, 23);
             this.buttonGerProdut.TabIndex = 7;
@@ -159,7 +148,7 @@
             // 
             // buttonGerProducao
             // 
-            this.buttonGerProducao.Location = new System.Drawing.Point(289, 325);
+            this.buttonGerProducao.Location = new System.Drawing.Point(283, 283);
             this.buttonGerProducao.Name = "buttonGerProducao";
             this.buttonGerProducao.Size = new System.Drawing.Size(159, 23);
             this.buttonGerProducao.TabIndex = 8;
@@ -174,7 +163,6 @@
             this.Controls.Add(this.buttonGerProducao);
             this.Controls.Add(this.buttonGerProdut);
             this.Controls.Add(this.buttonGerClient);
-            this.Controls.Add(this.buttonGerFuncionario);
             this.Controls.Add(this.labelGestao);
             this.Controls.Add(this.panel1);
             this.Name = "Gestao";
@@ -196,7 +184,6 @@
         private System.Windows.Forms.Button buttonVendas;
         private System.Windows.Forms.Button buttonGestão;
         private System.Windows.Forms.Label labelGestao;
-        private System.Windows.Forms.Button buttonGerFuncionario;
         private System.Windows.Forms.Button buttonGerClient;
         private System.Windows.Forms.Button buttonGerProdut;
         private System.Windows.Forms.Button buttonGerProducao;

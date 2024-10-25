@@ -41,13 +41,6 @@ namespace TelasDesktopPIM
         }
 
 
-        private void buttonGerFuncionario_Click(object sender, EventArgs e)
-        {
-            GerenciarFunc funcionarios = new GerenciarFunc();
-            funcionarios.ShowDialog();
-     
-        }
-
         private void buttonGerClient_Click(object sender, EventArgs e)
         {
             ListClientes clientes = new ListClientes();
