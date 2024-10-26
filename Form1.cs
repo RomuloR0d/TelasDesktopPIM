@@ -22,11 +22,7 @@ namespace TelasDesktopPIM
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Cadastro cadastro = new Cadastro();
-            cadastro.ShowDialog();
-        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
