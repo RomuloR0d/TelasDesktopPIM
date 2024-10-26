@@ -165,6 +165,7 @@
             this.button1.TabIndex = 36;
             this.button1.Text = "Cadastrar produção";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -234,7 +235,7 @@
             // 
             this.pictureBox3.Image = global::TelasDesktopPIM.Properties.Resources.ic_lapis351;
             this.pictureBox3.Location = new System.Drawing.Point(695, 190);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -245,7 +246,7 @@
             // 
             this.pictureBox2.Image = global::TelasDesktopPIM.Properties.Resources.ic_lixeira_70;
             this.pictureBox2.Location = new System.Drawing.Point(734, 190);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(19, 27);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

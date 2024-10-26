@@ -39,5 +39,11 @@ namespace TelasDesktopPIM
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CadastroProducao cadastroProducao = new CadastroProducao();
+            cadastroProducao.ShowDialog();
+        }
     }
 }
