@@ -40,5 +40,10 @@ namespace TelasDesktopPIM
             CadastroProduto cadastroProduto = new CadastroProduto();
             cadastroProduto.ShowDialog();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
