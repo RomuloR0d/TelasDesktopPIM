@@ -41,8 +41,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelGestao = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,7 +56,7 @@
             this.panel1.Controls.Add(this.buttonVendas);
             this.panel1.Controls.Add(this.buttonGestão);
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1064, 76);
             this.panel1.TabIndex = 22;
@@ -65,7 +67,7 @@
             this.buttonSair.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSair.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonSair.Location = new System.Drawing.Point(1012, 27);
-            this.buttonSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSair.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSair.Name = "buttonSair";
             this.buttonSair.Size = new System.Drawing.Size(52, 32);
             this.buttonSair.TabIndex = 5;
@@ -78,7 +80,7 @@
             this.buttonPerfil.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPerfil.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonPerfil.Location = new System.Drawing.Point(495, 27);
-            this.buttonPerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPerfil.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPerfil.Name = "buttonPerfil";
             this.buttonPerfil.Size = new System.Drawing.Size(124, 32);
             this.buttonPerfil.TabIndex = 4;
@@ -90,7 +92,7 @@
             // 
             this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LogoHorizontal_250;
             this.pictureBox1.Location = new System.Drawing.Point(689, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(260, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -104,7 +106,7 @@
             this.buttonVendas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVendas.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonVendas.Location = new System.Drawing.Point(305, 27);
-            this.buttonVendas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonVendas.Margin = new System.Windows.Forms.Padding(4);
             this.buttonVendas.Name = "buttonVendas";
             this.buttonVendas.Size = new System.Drawing.Size(124, 32);
             this.buttonVendas.TabIndex = 3;
@@ -118,7 +120,7 @@
             this.buttonGestão.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGestão.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonGestão.Location = new System.Drawing.Point(115, 27);
-            this.buttonGestão.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonGestão.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGestão.Name = "buttonGestão";
             this.buttonGestão.Size = new System.Drawing.Size(124, 32);
             this.buttonGestão.TabIndex = 1;
@@ -129,18 +131,19 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(619, 230);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Location = new System.Drawing.Point(643, 230);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(224, 24);
             this.textBox3.TabIndex = 21;
             this.textBox3.Text = "DD/MM/AAAA";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(333, 230);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Location = new System.Drawing.Point(353, 230);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(224, 24);
             this.textBox2.TabIndex = 20;
@@ -149,8 +152,8 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(108, 230);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(135, 230);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(127, 24);
             this.textBox1.TabIndex = 19;
@@ -204,11 +207,23 @@
             this.labelGestao.TabIndex = 14;
             this.labelGestao.Text = "LISTA DE CLIENTES";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TelasDesktopPIM.Properties.Resources.ic_lixeira_70;
+            this.pictureBox2.Location = new System.Drawing.Point(883, 230);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 45;
+            this.pictureBox2.TabStop = false;
+            // 
             // ListClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -217,11 +232,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelGestao);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListClientes";
             this.Text = "ListClientes";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +258,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelGestao;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
