@@ -125,7 +125,7 @@
             this.labelGestao.AutoSize = true;
             this.labelGestao.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGestao.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelGestao.Location = new System.Drawing.Point(429, 86);
+            this.labelGestao.Location = new System.Drawing.Point(225, 93);
             this.labelGestao.Name = "labelGestao";
             this.labelGestao.Size = new System.Drawing.Size(319, 28);
             this.labelGestao.TabIndex = 33;
@@ -133,28 +133,28 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(434, 154);
+            this.textBox1.Location = new System.Drawing.Point(230, 161);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(194, 20);
             this.textBox1.TabIndex = 34;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(434, 203);
+            this.textBox2.Location = new System.Drawing.Point(230, 210);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(194, 20);
             this.textBox2.TabIndex = 35;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(434, 256);
+            this.textBox3.Location = new System.Drawing.Point(230, 263);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(194, 20);
             this.textBox3.TabIndex = 36;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(434, 311);
+            this.textBox4.Location = new System.Drawing.Point(230, 318);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(194, 20);
             this.textBox4.TabIndex = 37;
@@ -163,7 +163,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.ForestGreen;
             this.button1.ForeColor = System.Drawing.Color.MintCream;
-            this.button1.Location = new System.Drawing.Point(434, 364);
+            this.button1.Location = new System.Drawing.Point(230, 371);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 38;
@@ -174,7 +174,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.ForestGreen;
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(553, 364);
+            this.button2.Location = new System.Drawing.Point(349, 371);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 39;
@@ -186,7 +186,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(431, 138);
+            this.label1.Location = new System.Drawing.Point(227, 145);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 15);
             this.label1.TabIndex = 40;
@@ -197,7 +197,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label2.Location = new System.Drawing.Point(431, 185);
+            this.label2.Location = new System.Drawing.Point(227, 192);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 15);
             this.label2.TabIndex = 41;
@@ -208,7 +208,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label3.Location = new System.Drawing.Point(431, 238);
+            this.label3.Location = new System.Drawing.Point(227, 245);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 15);
             this.label3.TabIndex = 42;
@@ -219,7 +219,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label4.Location = new System.Drawing.Point(431, 293);
+            this.label4.Location = new System.Drawing.Point(227, 300);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 15);
             this.label4.TabIndex = 43;
