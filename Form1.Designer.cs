@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBoxsenha = new System.Windows.Forms.TextBox();
+            this.entrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,18 +52,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Insira os dados para realizar login";
             // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(565, 249);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 13);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Senha";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // textBoxUsuario
             // 
             this.textBoxUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -74,18 +62,7 @@
             this.textBoxUsuario.TabIndex = 6;
             this.textBoxUsuario.Text = "E-mail";
             this.textBoxUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkGreen;
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(581, 288);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 39);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.textBoxUsuario.TextChanged += new System.EventHandler(this.textBoxUsuario_TextChanged);
             // 
             // pictureBox4
             // 
@@ -138,16 +115,40 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Você faz parte dessa fa(r)milia!";
             // 
+            // textBoxsenha
+            // 
+            this.textBoxsenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxsenha.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBoxsenha.Location = new System.Drawing.Point(566, 251);
+            this.textBoxsenha.Name = "textBoxsenha";
+            this.textBoxsenha.Size = new System.Drawing.Size(100, 13);
+            this.textBoxsenha.TabIndex = 12;
+            this.textBoxsenha.Text = "senha";
+            this.textBoxsenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxsenha.TextChanged += new System.EventHandler(this.textBoxsenha_TextChanged);
+            // 
+            // entrar
+            // 
+            this.entrar.BackColor = System.Drawing.Color.DarkGreen;
+            this.entrar.ForeColor = System.Drawing.SystemColors.Control;
+            this.entrar.Location = new System.Drawing.Point(581, 309);
+            this.entrar.Name = "entrar";
+            this.entrar.Size = new System.Drawing.Size(75, 39);
+            this.entrar.TabIndex = 13;
+            this.entrar.Text = "Entrar";
+            this.entrar.UseVisualStyleBackColor = false;
+            this.entrar.Click += new System.EventHandler(this.entrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.entrar);
+            this.Controls.Add(this.textBoxsenha);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxUsuario);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
@@ -169,11 +170,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBoxUsuario;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxsenha;
+        private System.Windows.Forms.Button entrar;
     }
 }
 

@@ -34,5 +34,40 @@ namespace TelasDesktopPIM
             TelaPerfil perfil = new TelaPerfil();
             perfil.ShowDialog();
         }
+
+        private void textBoxProduto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPlantio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxColheita_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonConfirmar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxProduto1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

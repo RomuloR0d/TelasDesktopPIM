@@ -35,16 +35,16 @@
             this.buttonVendas = new System.Windows.Forms.Button();
             this.buttonGestão = new System.Windows.Forms.Button();
             this.labelGestao = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBoxPlantio = new System.Windows.Forms.TextBox();
+            this.textBoxColheita = new System.Windows.Forms.TextBox();
+            this.textBoxQuantidade = new System.Windows.Forms.TextBox();
+            this.buttonConfirmar = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBoxProduto1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -134,55 +134,53 @@
             this.labelGestao.TabIndex = 33;
             this.labelGestao.Text = "CADASTRO DE PRODUÇÃO";
             // 
-            // textBox1
+            // textBoxPlantio
             // 
-            this.textBox1.Location = new System.Drawing.Point(230, 161);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 34;
+            this.textBoxPlantio.Location = new System.Drawing.Point(230, 210);
+            this.textBoxPlantio.Name = "textBoxPlantio";
+            this.textBoxPlantio.Size = new System.Drawing.Size(194, 20);
+            this.textBoxPlantio.TabIndex = 35;
+            this.textBoxPlantio.TextChanged += new System.EventHandler(this.textBoxPlantio_TextChanged);
             // 
-            // textBox2
+            // textBoxColheita
             // 
-            this.textBox2.Location = new System.Drawing.Point(230, 210);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
-            this.textBox2.TabIndex = 35;
+            this.textBoxColheita.Location = new System.Drawing.Point(230, 263);
+            this.textBoxColheita.Name = "textBoxColheita";
+            this.textBoxColheita.Size = new System.Drawing.Size(194, 20);
+            this.textBoxColheita.TabIndex = 36;
+            this.textBoxColheita.TextChanged += new System.EventHandler(this.textBoxColheita_TextChanged);
             // 
-            // textBox3
+            // textBoxQuantidade
             // 
-            this.textBox3.Location = new System.Drawing.Point(230, 263);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 20);
-            this.textBox3.TabIndex = 36;
+            this.textBoxQuantidade.Location = new System.Drawing.Point(230, 318);
+            this.textBoxQuantidade.Name = "textBoxQuantidade";
+            this.textBoxQuantidade.Size = new System.Drawing.Size(194, 20);
+            this.textBoxQuantidade.TabIndex = 37;
+            this.textBoxQuantidade.TextChanged += new System.EventHandler(this.textBoxQuantidade_TextChanged);
             // 
-            // textBox4
+            // buttonConfirmar
             // 
-            this.textBox4.Location = new System.Drawing.Point(230, 318);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(194, 20);
-            this.textBox4.TabIndex = 37;
+            this.buttonConfirmar.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonConfirmar.ForeColor = System.Drawing.Color.MintCream;
+            this.buttonConfirmar.Location = new System.Drawing.Point(230, 371);
+            this.buttonConfirmar.Name = "buttonConfirmar";
+            this.buttonConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfirmar.TabIndex = 38;
+            this.buttonConfirmar.Text = "Confirmar";
+            this.buttonConfirmar.UseVisualStyleBackColor = false;
+            this.buttonConfirmar.Click += new System.EventHandler(this.buttonConfirmar_Click);
             // 
-            // button1
+            // buttonCancelar
             // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.ForeColor = System.Drawing.Color.MintCream;
-            this.button1.Location = new System.Drawing.Point(230, 371);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Confirmar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.ForestGreen;
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(349, 371);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonCancelar.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonCancelar.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonCancelar.Location = new System.Drawing.Point(349, 371);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancelar.TabIndex = 39;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = false;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // label1
             // 
@@ -228,21 +226,29 @@
             this.label4.TabIndex = 43;
             this.label4.Text = "Quantidade";
             // 
+            // textBoxProduto1
+            // 
+            this.textBoxProduto1.Location = new System.Drawing.Point(230, 169);
+            this.textBoxProduto1.Name = "textBoxProduto1";
+            this.textBoxProduto1.Size = new System.Drawing.Size(194, 20);
+            this.textBoxProduto1.TabIndex = 44;
+            this.textBoxProduto1.TextChanged += new System.EventHandler(this.textBoxProduto1_TextChanged);
+            // 
             // CadastroProducao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxProduto1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonConfirmar);
+            this.Controls.Add(this.textBoxQuantidade);
+            this.Controls.Add(this.textBoxColheita);
+            this.Controls.Add(this.textBoxPlantio);
             this.Controls.Add(this.labelGestao);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -263,15 +269,15 @@
         private System.Windows.Forms.Button buttonVendas;
         private System.Windows.Forms.Button buttonGestão;
         private System.Windows.Forms.Label labelGestao;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxPlantio;
+        private System.Windows.Forms.TextBox textBoxColheita;
+        private System.Windows.Forms.TextBox textBoxQuantidade;
+        private System.Windows.Forms.Button buttonConfirmar;
+        private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxProduto1;
     }
 }

@@ -40,7 +40,19 @@ namespace TelasDesktopPIM
             perfil.ShowDialog();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+
+
+        private void textBoxCpfCnpj_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNomeCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxDataRegistro_TextChanged(object sender, EventArgs e)
         {
 
         }

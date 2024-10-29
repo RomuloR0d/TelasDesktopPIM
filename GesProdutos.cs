@@ -45,5 +45,15 @@ namespace TelasDesktopPIM
         {
 
         }
+
+        private void textBoxCodProduto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEstoque_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

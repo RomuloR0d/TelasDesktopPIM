@@ -32,12 +32,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonConProduto = new System.Windows.Forms.Button();
+            this.textBoxEstoque = new System.Windows.Forms.TextBox();
+            this.textBoxPreco = new System.Windows.Forms.TextBox();
+            this.textBoxDescricao = new System.Windows.Forms.TextBox();
+            this.textBoxProduto2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSair = new System.Windows.Forms.Button();
             this.buttonPerfil = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.buttonVendas = new System.Windows.Forms.Button();
             this.buttonGestão = new System.Windows.Forms.Button();
             this.labelGestao = new System.Windows.Forms.Label();
+            this.buttonCanProduto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,56 +93,50 @@
             this.label1.TabIndex = 52;
             this.label1.Text = "Produto";
             // 
-            // button2
+            // buttonConProduto
             // 
-            this.button2.BackColor = System.Drawing.Color.ForestGreen;
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(349, 401);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 24);
-            this.button2.TabIndex = 51;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonConProduto.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonConProduto.ForeColor = System.Drawing.Color.MintCream;
+            this.buttonConProduto.Location = new System.Drawing.Point(230, 401);
+            this.buttonConProduto.Name = "buttonConProduto";
+            this.buttonConProduto.Size = new System.Drawing.Size(75, 24);
+            this.buttonConProduto.TabIndex = 50;
+            this.buttonConProduto.Text = "Confirmar";
+            this.buttonConProduto.UseVisualStyleBackColor = false;
+            this.buttonConProduto.Click += new System.EventHandler(this.buttonConProduto_Click);
             // 
-            // button1
+            // textBoxEstoque
             // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.ForeColor = System.Drawing.Color.MintCream;
-            this.button1.Location = new System.Drawing.Point(230, 401);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 24);
-            this.button1.TabIndex = 50;
-            this.button1.Text = "Confirmar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.textBoxEstoque.Location = new System.Drawing.Point(230, 356);
+            this.textBoxEstoque.Name = "textBoxEstoque";
+            this.textBoxEstoque.Size = new System.Drawing.Size(194, 20);
+            this.textBoxEstoque.TabIndex = 49;
+            this.textBoxEstoque.TextChanged += new System.EventHandler(this.textBoxEstoque_TextChanged);
             // 
-            // textBox4
+            // textBoxPreco
             // 
-            this.textBox4.Location = new System.Drawing.Point(230, 356);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(194, 20);
-            this.textBox4.TabIndex = 49;
+            this.textBoxPreco.Location = new System.Drawing.Point(230, 301);
+            this.textBoxPreco.Name = "textBoxPreco";
+            this.textBoxPreco.Size = new System.Drawing.Size(194, 20);
+            this.textBoxPreco.TabIndex = 48;
+            this.textBoxPreco.TextChanged += new System.EventHandler(this.textBoxPreco_TextChanged);
             // 
-            // textBox3
+            // textBoxDescricao
             // 
-            this.textBox3.Location = new System.Drawing.Point(230, 301);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 20);
-            this.textBox3.TabIndex = 48;
+            this.textBoxDescricao.Location = new System.Drawing.Point(230, 202);
+            this.textBoxDescricao.Multiline = true;
+            this.textBoxDescricao.Name = "textBoxDescricao";
+            this.textBoxDescricao.Size = new System.Drawing.Size(244, 78);
+            this.textBoxDescricao.TabIndex = 47;
+            this.textBoxDescricao.TextChanged += new System.EventHandler(this.textBoxDescricao_TextChanged);
             // 
-            // textBox2
+            // textBoxProduto2
             // 
-            this.textBox2.Location = new System.Drawing.Point(230, 202);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 78);
-            this.textBox2.TabIndex = 47;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(230, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 46;
+            this.textBoxProduto2.Location = new System.Drawing.Point(230, 153);
+            this.textBoxProduto2.Name = "textBoxProduto2";
+            this.textBoxProduto2.Size = new System.Drawing.Size(194, 20);
+            this.textBoxProduto2.TabIndex = 46;
+            this.textBoxProduto2.TextChanged += new System.EventHandler(this.textBoxProduto2_TextChanged);
             // 
             // panel1
             // 
@@ -229,23 +223,34 @@
             this.labelGestao.TabIndex = 57;
             this.labelGestao.Text = "CADASTRO DE PRODUTO";
             // 
+            // buttonCanProduto
+            // 
+            this.buttonCanProduto.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonCanProduto.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonCanProduto.Location = new System.Drawing.Point(349, 401);
+            this.buttonCanProduto.Name = "buttonCanProduto";
+            this.buttonCanProduto.Size = new System.Drawing.Size(75, 24);
+            this.buttonCanProduto.TabIndex = 58;
+            this.buttonCanProduto.Text = "Cancelar";
+            this.buttonCanProduto.UseVisualStyleBackColor = false;
+            // 
             // CadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonCanProduto);
             this.Controls.Add(this.labelGestao);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.buttonConProduto);
+            this.Controls.Add(this.textBoxEstoque);
+            this.Controls.Add(this.textBoxPreco);
+            this.Controls.Add(this.textBoxDescricao);
+            this.Controls.Add(this.textBoxProduto2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CadastroProduto";
             this.Text = "CadastroProduto";
@@ -262,12 +267,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonConProduto;
+        private System.Windows.Forms.TextBox textBoxEstoque;
+        private System.Windows.Forms.TextBox textBoxPreco;
+        private System.Windows.Forms.TextBox textBoxDescricao;
+        private System.Windows.Forms.TextBox textBoxProduto2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonSair;
         private System.Windows.Forms.Button buttonPerfil;
@@ -275,5 +279,6 @@
         private System.Windows.Forms.Button buttonVendas;
         private System.Windows.Forms.Button buttonGestão;
         private System.Windows.Forms.Label labelGestao;
+        private System.Windows.Forms.Button buttonCanProduto;
     }
 }

@@ -17,21 +17,34 @@ namespace TelasDesktopPIM
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TelaPerfil telaPerfil = new TelaPerfil(); 
-            telaPerfil.ShowDialog();
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void textBoxUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxsenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void entrar_Click(object sender, EventArgs e)
+        {
+            TelaPerfil telaPerfil = new TelaPerfil();
+            telaPerfil.ShowDialog();
 
         }
     }

@@ -22,11 +22,7 @@ namespace TelasDesktopPIM
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Gestao Gestao = new Gestao();
-            Gestao.ShowDialog();
-        }
+
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -41,6 +37,49 @@ namespace TelasDesktopPIM
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void textBoxNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTelefone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSair_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonGestao_Click(object sender, EventArgs e)
+        {
+            Gestao gestao = new Gestao();
+            gestao.ShowDialog();
+        }
+
+        private void textBoxEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxCpf_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNascimento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxEndereco_TextChanged(object sender, EventArgs e)
         {
 
         }
