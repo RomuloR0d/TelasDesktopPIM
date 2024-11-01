@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonGestao = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
             this.buttonPerfil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,7 +42,9 @@
             this.textBoxCpf = new System.Windows.Forms.TextBox();
             this.textBoxNascimento = new System.Windows.Forms.TextBox();
             this.textBoxEndereco = new System.Windows.Forms.TextBox();
-            this.buttonGestao = new System.Windows.Forms.Button();
+            this.buttonDelTelaPerfil = new System.Windows.Forms.Button();
+            this.buttonAtt = new System.Windows.Forms.Button();
+            this.textBoxOla = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +62,19 @@
             this.panel1.Size = new System.Drawing.Size(798, 66);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // buttonGestao
+            // 
+            this.buttonGestao.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonGestao.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGestao.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonGestao.Location = new System.Drawing.Point(51, 22);
+            this.buttonGestao.Name = "buttonGestao";
+            this.buttonGestao.Size = new System.Drawing.Size(93, 26);
+            this.buttonGestao.TabIndex = 17;
+            this.buttonGestao.Text = "Gestão";
+            this.buttonGestao.UseVisualStyleBackColor = false;
+            this.buttonGestao.Click += new System.EventHandler(this.buttonGestao_Click);
             // 
             // buttonSair
             // 
@@ -117,9 +133,9 @@
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
             this.label1.Location = new System.Drawing.Point(249, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 18);
+            this.label1.Size = new System.Drawing.Size(39, 18);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Olá Farmer!";
+            this.label1.Text = "Olá ";
             // 
             // label2
             // 
@@ -186,24 +202,45 @@
             this.textBoxEndereco.Text = "endereço";
             this.textBoxEndereco.TextChanged += new System.EventHandler(this.textBoxEndereco_TextChanged);
             // 
-            // buttonGestao
+            // buttonDelTelaPerfil
             // 
-            this.buttonGestao.BackColor = System.Drawing.Color.ForestGreen;
-            this.buttonGestao.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGestao.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonGestao.Location = new System.Drawing.Point(51, 22);
-            this.buttonGestao.Name = "buttonGestao";
-            this.buttonGestao.Size = new System.Drawing.Size(93, 26);
-            this.buttonGestao.TabIndex = 17;
-            this.buttonGestao.Text = "Gestão";
-            this.buttonGestao.UseVisualStyleBackColor = false;
-            this.buttonGestao.Click += new System.EventHandler(this.buttonGestao_Click);
+            this.buttonDelTelaPerfil.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonDelTelaPerfil.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelTelaPerfil.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonDelTelaPerfil.Location = new System.Drawing.Point(437, 377);
+            this.buttonDelTelaPerfil.Name = "buttonDelTelaPerfil";
+            this.buttonDelTelaPerfil.Size = new System.Drawing.Size(93, 26);
+            this.buttonDelTelaPerfil.TabIndex = 17;
+            this.buttonDelTelaPerfil.Text = "Deletar";
+            this.buttonDelTelaPerfil.UseVisualStyleBackColor = false;
+            // 
+            // buttonAtt
+            // 
+            this.buttonAtt.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonAtt.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAtt.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonAtt.Location = new System.Drawing.Point(267, 377);
+            this.buttonAtt.Name = "buttonAtt";
+            this.buttonAtt.Size = new System.Drawing.Size(93, 26);
+            this.buttonAtt.TabIndex = 18;
+            this.buttonAtt.Text = "Atualizar";
+            this.buttonAtt.UseVisualStyleBackColor = false;
+            // 
+            // textBoxOla
+            // 
+            this.textBoxOla.Location = new System.Drawing.Point(281, 85);
+            this.textBoxOla.Name = "textBoxOla";
+            this.textBoxOla.Size = new System.Drawing.Size(79, 20);
+            this.textBoxOla.TabIndex = 19;
             // 
             // TelaPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxOla);
+            this.Controls.Add(this.buttonAtt);
+            this.Controls.Add(this.buttonDelTelaPerfil);
             this.Controls.Add(this.textBoxEndereco);
             this.Controls.Add(this.textBoxNascimento);
             this.Controls.Add(this.textBoxCpf);
@@ -236,5 +273,8 @@
         private System.Windows.Forms.TextBox textBoxNascimento;
         private System.Windows.Forms.TextBox textBoxEndereco;
         private System.Windows.Forms.Button buttonGestao;
+        private System.Windows.Forms.Button buttonDelTelaPerfil;
+        private System.Windows.Forms.Button buttonAtt;
+        private System.Windows.Forms.TextBox textBoxOla;
     }
 }
