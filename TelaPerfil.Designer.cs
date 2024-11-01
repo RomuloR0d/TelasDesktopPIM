@@ -42,9 +42,9 @@
             this.textBoxCpf = new System.Windows.Forms.TextBox();
             this.textBoxNascimento = new System.Windows.Forms.TextBox();
             this.textBoxEndereco = new System.Windows.Forms.TextBox();
-            this.buttonDelTelaPerfil = new System.Windows.Forms.Button();
             this.buttonAtt = new System.Windows.Forms.Button();
             this.textBoxOla = new System.Windows.Forms.TextBox();
+            this.buttonSalvarPerfil = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -202,18 +202,6 @@
             this.textBoxEndereco.Text = "endereço";
             this.textBoxEndereco.TextChanged += new System.EventHandler(this.textBoxEndereco_TextChanged);
             // 
-            // buttonDelTelaPerfil
-            // 
-            this.buttonDelTelaPerfil.BackColor = System.Drawing.Color.ForestGreen;
-            this.buttonDelTelaPerfil.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelTelaPerfil.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonDelTelaPerfil.Location = new System.Drawing.Point(437, 377);
-            this.buttonDelTelaPerfil.Name = "buttonDelTelaPerfil";
-            this.buttonDelTelaPerfil.Size = new System.Drawing.Size(93, 26);
-            this.buttonDelTelaPerfil.TabIndex = 17;
-            this.buttonDelTelaPerfil.Text = "Deletar";
-            this.buttonDelTelaPerfil.UseVisualStyleBackColor = false;
-            // 
             // buttonAtt
             // 
             this.buttonAtt.BackColor = System.Drawing.Color.ForestGreen;
@@ -233,14 +221,26 @@
             this.textBoxOla.Size = new System.Drawing.Size(79, 20);
             this.textBoxOla.TabIndex = 19;
             // 
+            // buttonSalvarPerfil
+            // 
+            this.buttonSalvarPerfil.BackColor = System.Drawing.Color.ForestGreen;
+            this.buttonSalvarPerfil.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSalvarPerfil.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonSalvarPerfil.Location = new System.Drawing.Point(424, 377);
+            this.buttonSalvarPerfil.Name = "buttonSalvarPerfil";
+            this.buttonSalvarPerfil.Size = new System.Drawing.Size(93, 26);
+            this.buttonSalvarPerfil.TabIndex = 20;
+            this.buttonSalvarPerfil.Text = "Salvar";
+            this.buttonSalvarPerfil.UseVisualStyleBackColor = false;
+            // 
             // TelaPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonSalvarPerfil);
             this.Controls.Add(this.textBoxOla);
             this.Controls.Add(this.buttonAtt);
-            this.Controls.Add(this.buttonDelTelaPerfil);
             this.Controls.Add(this.textBoxEndereco);
             this.Controls.Add(this.textBoxNascimento);
             this.Controls.Add(this.textBoxCpf);
@@ -273,8 +273,8 @@
         private System.Windows.Forms.TextBox textBoxNascimento;
         private System.Windows.Forms.TextBox textBoxEndereco;
         private System.Windows.Forms.Button buttonGestao;
-        private System.Windows.Forms.Button buttonDelTelaPerfil;
         private System.Windows.Forms.Button buttonAtt;
         private System.Windows.Forms.TextBox textBoxOla;
+        private System.Windows.Forms.Button buttonSalvarPerfil;
     }
 }
