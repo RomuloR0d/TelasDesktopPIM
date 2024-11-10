@@ -29,11 +29,7 @@ namespace TelasDesktopPIM
             vendas.ShowDialog();
         }
 
-        private void buttonPerfil_Click(object sender, EventArgs e)
-        {
-            TelaPerfil perfil = new TelaPerfil();
-            perfil.ShowDialog();
-        }
+
 
         private void textBoxProduto2_TextChanged(object sender, EventArgs e)
         {

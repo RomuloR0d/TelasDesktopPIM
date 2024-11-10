@@ -25,11 +25,6 @@ namespace TelasDesktopPIM
 
 
 
-        private void buttonPerfil_Click(object sender, EventArgs e)
-        {
-            TelaPerfil perfil = new TelaPerfil();
-            perfil.ShowDialog();
-        }
 
         private void textBoxcliente_TextChanged(object sender, EventArgs e)
         {
@@ -52,6 +47,16 @@ namespace TelasDesktopPIM
         }
 
         private void buttonSair_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonVendas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

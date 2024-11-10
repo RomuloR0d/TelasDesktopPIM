@@ -22,11 +22,7 @@ namespace TelasDesktopPIM
 
         }
 
-        private void buttonPerfil_Click(object sender, EventArgs e)
-        {
-            TelaPerfil perfil = new TelaPerfil();
-            perfil.ShowDialog();
-        }
+
 
         private void buttonGestão_Click(object sender, EventArgs e)
         {

@@ -43,9 +43,8 @@ namespace TelasDesktopPIM
 
         private void entrar_Click(object sender, EventArgs e)
         {
-            TelaPerfil telaPerfil = new TelaPerfil();
-            telaPerfil.ShowDialog();
-
+            Gestao gestao = new Gestao();
+            gestao.ShowDialog();
         }
     }
 }
