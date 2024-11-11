@@ -173,5 +173,14 @@
   <ItemGroup>
     <None Include="Resources\ic-lapis352.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic-lixeira-35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic-lixeira-351.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic-lapis15.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

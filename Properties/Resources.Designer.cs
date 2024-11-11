@@ -63,6 +63,16 @@ namespace TelasDesktopPIM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ic_lapis15 {
+            get {
+                object obj = ResourceManager.GetObject("ic-lapis15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_lapis35 {
             get {
                 object obj = ResourceManager.GetObject("ic-lapis35", resourceCulture);
@@ -86,6 +96,16 @@ namespace TelasDesktopPIM.Properties {
         internal static System.Drawing.Bitmap ic_lapis352 {
             get {
                 object obj = ResourceManager.GetObject("ic-lapis352", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_lixeira_35 {
+            get {
+                object obj = ResourceManager.GetObject("ic-lixeira-35", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

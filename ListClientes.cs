@@ -58,7 +58,7 @@ namespace TelasDesktopPIM
 
         }
 
-        private void pictureBoxDelClient_Click(object sender, EventArgs e)
+        private void DeletClient_Click(object sender, EventArgs e)
         {
 
         }

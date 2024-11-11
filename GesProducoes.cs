@@ -57,17 +57,16 @@ namespace TelasDesktopPIM
 
         }
 
-        private void pictureBoxDelProducao_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void pictureBoxEditProducao_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void buttonSair_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeletProducao_Click(object sender, EventArgs e)
         {
 
         }
