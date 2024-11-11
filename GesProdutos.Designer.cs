@@ -41,14 +41,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelGestao = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDelProduto = new System.Windows.Forms.PictureBox();
             this.textBoxPreco2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEditProduto = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelProduto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEditProduto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -198,16 +198,17 @@
             this.labelGestao.TabIndex = 23;
             this.labelGestao.Text = "LISTA DE PRODUTOS";
             // 
-            // pictureBox2
+            // pictureBoxDelProduto
             // 
-            this.pictureBox2.Image = global::TelasDesktopPIM.Properties.Resources.ic_lixeira_70;
-            this.pictureBox2.Location = new System.Drawing.Point(703, 185);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(19, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 44;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxDelProduto.Image = global::TelasDesktopPIM.Properties.Resources.ic_lixeira_70;
+            this.pictureBoxDelProduto.Location = new System.Drawing.Point(703, 185);
+            this.pictureBoxDelProduto.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxDelProduto.Name = "pictureBoxDelProduto";
+            this.pictureBoxDelProduto.Size = new System.Drawing.Size(19, 27);
+            this.pictureBoxDelProduto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxDelProduto.TabIndex = 44;
+            this.pictureBoxDelProduto.TabStop = false;
+            this.pictureBoxDelProduto.Click += new System.EventHandler(this.pictureBoxDelProduto_Click);
             // 
             // textBoxPreco2
             // 
@@ -228,26 +229,27 @@
             this.label4.TabIndex = 45;
             this.label4.Text = "Preço";
             // 
-            // pictureBox3
+            // pictureBoxEditProduto
             // 
-            this.pictureBox3.Image = global::TelasDesktopPIM.Properties.Resources.ic_lapis352;
-            this.pictureBox3.Location = new System.Drawing.Point(659, 181);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 37);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 47;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxEditProduto.Image = global::TelasDesktopPIM.Properties.Resources.ic_lapis352;
+            this.pictureBoxEditProduto.Location = new System.Drawing.Point(659, 185);
+            this.pictureBoxEditProduto.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxEditProduto.Name = "pictureBoxEditProduto";
+            this.pictureBoxEditProduto.Size = new System.Drawing.Size(38, 37);
+            this.pictureBoxEditProduto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxEditProduto.TabIndex = 48;
+            this.pictureBoxEditProduto.TabStop = false;
+            this.pictureBoxEditProduto.Click += new System.EventHandler(this.pictureBoxEditProduto_Click);
             // 
             // GesProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBoxEditProduto);
             this.Controls.Add(this.textBoxPreco2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBoxDelProduto);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBoxEstoque);
             this.Controls.Add(this.textProdutoNome);
@@ -261,8 +263,8 @@
             this.Text = "GesProdutos";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelProduto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEditProduto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,9 +285,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelGestao;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxDelProduto;
         private System.Windows.Forms.TextBox textBoxPreco2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBoxEditProduto;
     }
 }

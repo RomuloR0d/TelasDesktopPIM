@@ -43,12 +43,12 @@
             this.labelGestao = new System.Windows.Forms.Label();
             this.textBoxDataColheita = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEditProducao = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDelProducao = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEditProducao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelProducao)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,6 +74,7 @@
             this.buttonSair.TabIndex = 5;
             this.buttonSair.Text = "Sair";
             this.buttonSair.UseVisualStyleBackColor = false;
+            this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
             // 
             // pictureBox1
             // 
@@ -219,35 +220,37 @@
             this.label4.TabIndex = 41;
             this.label4.Text = "Data da colheita";
             // 
-            // pictureBox3
+            // pictureBoxEditProducao
             // 
-            this.pictureBox3.Image = global::TelasDesktopPIM.Properties.Resources.ic_lapis352;
-            this.pictureBox3.Location = new System.Drawing.Point(698, 185);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 37);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 44;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxEditProducao.Image = global::TelasDesktopPIM.Properties.Resources.ic_lapis352;
+            this.pictureBoxEditProducao.Location = new System.Drawing.Point(698, 185);
+            this.pictureBoxEditProducao.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxEditProducao.Name = "pictureBoxEditProducao";
+            this.pictureBoxEditProducao.Size = new System.Drawing.Size(38, 37);
+            this.pictureBoxEditProducao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxEditProducao.TabIndex = 44;
+            this.pictureBoxEditProducao.TabStop = false;
+            this.pictureBoxEditProducao.Click += new System.EventHandler(this.pictureBoxEditProducao_Click);
             // 
-            // pictureBox2
+            // pictureBoxDelProducao
             // 
-            this.pictureBox2.Image = global::TelasDesktopPIM.Properties.Resources.ic_lixeira_70;
-            this.pictureBox2.Location = new System.Drawing.Point(736, 190);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(19, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 43;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxDelProducao.Image = global::TelasDesktopPIM.Properties.Resources.ic_lixeira_70;
+            this.pictureBoxDelProducao.Location = new System.Drawing.Point(736, 190);
+            this.pictureBoxDelProducao.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxDelProducao.Name = "pictureBoxDelProducao";
+            this.pictureBoxDelProducao.Size = new System.Drawing.Size(19, 27);
+            this.pictureBoxDelProducao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxDelProducao.TabIndex = 43;
+            this.pictureBoxDelProducao.TabStop = false;
+            this.pictureBoxDelProducao.Click += new System.EventHandler(this.pictureBoxDelProducao_Click);
             // 
             // GesProducoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBoxEditProducao);
+            this.Controls.Add(this.pictureBoxDelProducao);
             this.Controls.Add(this.textBoxDataColheita);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -263,8 +266,8 @@
             this.Text = "GesProducoes";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEditProducao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelProducao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,7 +290,7 @@
         private System.Windows.Forms.Label labelGestao;
         private System.Windows.Forms.TextBox textBoxDataColheita;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBoxDelProducao;
+        private System.Windows.Forms.PictureBox pictureBoxEditProducao;
     }
 }

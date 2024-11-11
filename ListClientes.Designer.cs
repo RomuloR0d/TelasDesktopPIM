@@ -39,11 +39,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelGestao = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBoxDataRegistro = new System.Windows.Forms.TextBox();
+            this.pictureBoxDelClient = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelClient)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -171,17 +171,6 @@
             this.labelGestao.TabIndex = 14;
             this.labelGestao.Text = "LISTA DE CLIENTES";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TelasDesktopPIM.Properties.Resources.ic_lixeira_70;
-            this.pictureBox2.Location = new System.Drawing.Point(662, 187);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(19, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 45;
-            this.pictureBox2.TabStop = false;
-            // 
             // textBoxDataRegistro
             // 
             this.textBoxDataRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,13 +181,25 @@
             this.textBoxDataRegistro.Text = "DD/MM/AAAA";
             this.textBoxDataRegistro.TextChanged += new System.EventHandler(this.textBoxDataRegistro_TextChanged);
             // 
+            // pictureBoxDelClient
+            // 
+            this.pictureBoxDelClient.Image = global::TelasDesktopPIM.Properties.Resources.ic_lixeira_70;
+            this.pictureBoxDelClient.Location = new System.Drawing.Point(656, 187);
+            this.pictureBoxDelClient.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxDelClient.Name = "pictureBoxDelClient";
+            this.pictureBoxDelClient.Size = new System.Drawing.Size(21, 27);
+            this.pictureBoxDelClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxDelClient.TabIndex = 47;
+            this.pictureBoxDelClient.TabStop = false;
+            this.pictureBoxDelClient.Click += new System.EventHandler(this.pictureBoxDelClient_Click);
+            // 
             // ListClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBoxDelClient);
             this.Controls.Add(this.textBoxDataRegistro);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBoxNomeCliente);
             this.Controls.Add(this.textBoxCpfCnpj);
@@ -210,7 +211,7 @@
             this.Text = "ListClientes";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelClient)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,7 +230,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelGestao;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBoxDataRegistro;
+        private System.Windows.Forms.PictureBox pictureBoxDelClient;
     }
 }
