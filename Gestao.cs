@@ -54,5 +54,10 @@ namespace TelasDesktopPIM
             GesProducoes producoes = new GesProducoes();
             producoes.ShowDialog();
         }
+
+        private void buttonSair_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

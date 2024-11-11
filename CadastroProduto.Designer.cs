@@ -101,7 +101,7 @@
             this.buttonConProduto.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonConProduto.ForeColor = System.Drawing.Color.MintCream;
             this.buttonConProduto.Location = new System.Drawing.Point(357, 491);
-            this.buttonConProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonConProduto.Margin = new System.Windows.Forms.Padding(4);
             this.buttonConProduto.Name = "buttonConProduto";
             this.buttonConProduto.Size = new System.Drawing.Size(100, 30);
             this.buttonConProduto.TabIndex = 50;
@@ -112,7 +112,7 @@
             // textBoxEstoque
             // 
             this.textBoxEstoque.Location = new System.Drawing.Point(357, 436);
-            this.textBoxEstoque.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEstoque.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEstoque.Name = "textBoxEstoque";
             this.textBoxEstoque.Size = new System.Drawing.Size(257, 22);
             this.textBoxEstoque.TabIndex = 49;
@@ -121,7 +121,7 @@
             // textBoxPreco
             // 
             this.textBoxPreco.Location = new System.Drawing.Point(357, 368);
-            this.textBoxPreco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPreco.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPreco.Name = "textBoxPreco";
             this.textBoxPreco.Size = new System.Drawing.Size(257, 22);
             this.textBoxPreco.TabIndex = 48;
@@ -130,7 +130,7 @@
             // textBoxDescricao
             // 
             this.textBoxDescricao.Location = new System.Drawing.Point(357, 246);
-            this.textBoxDescricao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDescricao.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDescricao.Multiline = true;
             this.textBoxDescricao.Name = "textBoxDescricao";
             this.textBoxDescricao.Size = new System.Drawing.Size(324, 95);
@@ -140,7 +140,7 @@
             // textBoxProduto2
             // 
             this.textBoxProduto2.Location = new System.Drawing.Point(357, 186);
-            this.textBoxProduto2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxProduto2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxProduto2.Name = "textBoxProduto2";
             this.textBoxProduto2.Size = new System.Drawing.Size(257, 22);
             this.textBoxProduto2.TabIndex = 46;
@@ -154,7 +154,7 @@
             this.panel1.Controls.Add(this.buttonVendas);
             this.panel1.Controls.Add(this.buttonGestão);
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1064, 80);
             this.panel1.TabIndex = 56;
@@ -165,18 +165,19 @@
             this.buttonSair.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSair.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonSair.Location = new System.Drawing.Point(988, 27);
-            this.buttonSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSair.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSair.Name = "buttonSair";
             this.buttonSair.Size = new System.Drawing.Size(76, 32);
             this.buttonSair.TabIndex = 5;
             this.buttonSair.Text = "Sair";
             this.buttonSair.UseVisualStyleBackColor = false;
+            this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LogoHorizontal_250;
             this.pictureBox1.Location = new System.Drawing.Point(0, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(345, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -189,7 +190,7 @@
             this.buttonVendas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVendas.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonVendas.Location = new System.Drawing.Point(576, 21);
-            this.buttonVendas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonVendas.Margin = new System.Windows.Forms.Padding(4);
             this.buttonVendas.Name = "buttonVendas";
             this.buttonVendas.Size = new System.Drawing.Size(160, 44);
             this.buttonVendas.TabIndex = 3;
@@ -203,7 +204,7 @@
             this.buttonGestão.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGestão.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonGestão.Location = new System.Drawing.Point(356, 21);
-            this.buttonGestão.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonGestão.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGestão.Name = "buttonGestão";
             this.buttonGestão.Size = new System.Drawing.Size(160, 44);
             this.buttonGestão.TabIndex = 1;
@@ -228,7 +229,7 @@
             this.buttonCanProduto.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonCanProduto.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonCanProduto.Location = new System.Drawing.Point(516, 491);
-            this.buttonCanProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCanProduto.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCanProduto.Name = "buttonCanProduto";
             this.buttonCanProduto.Size = new System.Drawing.Size(100, 30);
             this.buttonCanProduto.TabIndex = 58;

@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSair = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonVendas = new System.Windows.Forms.Button();
             this.buttonGestão = new System.Windows.Forms.Button();
             this.textBoxNomeCliente = new System.Windows.Forms.TextBox();
@@ -40,7 +41,6 @@
             this.labelGestao = new System.Windows.Forms.Label();
             this.textBoxDataRegistro = new System.Windows.Forms.TextBox();
             this.DeletClient = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +53,7 @@
             this.panel1.Controls.Add(this.buttonVendas);
             this.panel1.Controls.Add(this.buttonGestão);
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1064, 76);
             this.panel1.TabIndex = 22;
@@ -64,12 +64,25 @@
             this.buttonSair.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSair.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonSair.Location = new System.Drawing.Point(1012, 27);
-            this.buttonSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSair.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSair.Name = "buttonSair";
             this.buttonSair.Size = new System.Drawing.Size(52, 32);
             this.buttonSair.TabIndex = 5;
             this.buttonSair.Text = "Sair";
             this.buttonSair.UseVisualStyleBackColor = false;
+            this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LogoHorizontal_250;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(333, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // buttonVendas
             // 
@@ -77,7 +90,7 @@
             this.buttonVendas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVendas.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonVendas.Location = new System.Drawing.Point(591, 15);
-            this.buttonVendas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonVendas.Margin = new System.Windows.Forms.Padding(4);
             this.buttonVendas.Name = "buttonVendas";
             this.buttonVendas.Size = new System.Drawing.Size(159, 44);
             this.buttonVendas.TabIndex = 3;
@@ -91,7 +104,7 @@
             this.buttonGestão.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGestão.ForeColor = System.Drawing.SystemColors.Control;
             this.buttonGestão.Location = new System.Drawing.Point(352, 15);
-            this.buttonGestão.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonGestão.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGestão.Name = "buttonGestão";
             this.buttonGestão.Size = new System.Drawing.Size(159, 44);
             this.buttonGestão.TabIndex = 1;
@@ -103,7 +116,7 @@
             // 
             this.textBoxNomeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNomeCliente.Location = new System.Drawing.Point(353, 230);
-            this.textBoxNomeCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNomeCliente.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNomeCliente.Name = "textBoxNomeCliente";
             this.textBoxNomeCliente.Size = new System.Drawing.Size(224, 24);
             this.textBoxNomeCliente.TabIndex = 20;
@@ -114,7 +127,7 @@
             // 
             this.textBoxCpfCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCpfCnpj.Location = new System.Drawing.Point(135, 230);
-            this.textBoxCpfCnpj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxCpfCnpj.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCpfCnpj.Name = "textBoxCpfCnpj";
             this.textBoxCpfCnpj.Size = new System.Drawing.Size(127, 24);
             this.textBoxCpfCnpj.TabIndex = 19;
@@ -173,7 +186,7 @@
             // 
             this.textBoxDataRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDataRegistro.Location = new System.Drawing.Point(627, 230);
-            this.textBoxDataRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDataRegistro.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDataRegistro.Name = "textBoxDataRegistro";
             this.textBoxDataRegistro.Size = new System.Drawing.Size(224, 24);
             this.textBoxDataRegistro.TabIndex = 46;
@@ -190,18 +203,6 @@
             this.DeletClient.UseVisualStyleBackColor = true;
             this.DeletClient.Click += new System.EventHandler(this.DeletClient_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LogoHorizontal_250;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(333, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // ListClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -216,7 +217,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelGestao);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListClientes";
             this.Text = "ListClientes";
             this.panel1.ResumeLayout(false);

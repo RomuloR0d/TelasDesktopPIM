@@ -56,8 +56,9 @@
             this.panel1.Controls.Add(this.buttonVendas);
             this.panel1.Controls.Add(this.buttonGestão);
             this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(798, 62);
+            this.panel1.Size = new System.Drawing.Size(1064, 76);
             this.panel1.TabIndex = 32;
             // 
             // buttonSair
@@ -65,19 +66,22 @@
             this.buttonSair.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonSair.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSair.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSair.Location = new System.Drawing.Point(732, 19);
+            this.buttonSair.Location = new System.Drawing.Point(976, 23);
+            this.buttonSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSair.Name = "buttonSair";
-            this.buttonSair.Size = new System.Drawing.Size(63, 32);
+            this.buttonSair.Size = new System.Drawing.Size(84, 39);
             this.buttonSair.TabIndex = 5;
             this.buttonSair.Text = "Sair";
             this.buttonSair.UseVisualStyleBackColor = false;
+            this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TelasDesktopPIM.Properties.Resources.LogoHorizontal_250;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(323, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -87,9 +91,10 @@
             this.buttonVendas.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonVendas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVendas.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonVendas.Location = new System.Drawing.Point(410, 14);
+            this.buttonVendas.Location = new System.Drawing.Point(547, 17);
+            this.buttonVendas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonVendas.Name = "buttonVendas";
-            this.buttonVendas.Size = new System.Drawing.Size(117, 37);
+            this.buttonVendas.Size = new System.Drawing.Size(156, 46);
             this.buttonVendas.TabIndex = 3;
             this.buttonVendas.Text = "Vendas";
             this.buttonVendas.UseVisualStyleBackColor = false;
@@ -100,9 +105,10 @@
             this.buttonGestão.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonGestão.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGestão.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonGestão.Location = new System.Drawing.Point(248, 14);
+            this.buttonGestão.Location = new System.Drawing.Point(331, 17);
+            this.buttonGestão.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonGestão.Name = "buttonGestão";
-            this.buttonGestão.Size = new System.Drawing.Size(117, 37);
+            this.buttonGestão.Size = new System.Drawing.Size(156, 46);
             this.buttonGestão.TabIndex = 1;
             this.buttonGestão.Text = "Gestão";
             this.buttonGestão.UseVisualStyleBackColor = false;
@@ -113,33 +119,37 @@
             this.labelGestao.AutoSize = true;
             this.labelGestao.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGestao.ForeColor = System.Drawing.Color.DarkGreen;
-            this.labelGestao.Location = new System.Drawing.Point(244, 95);
+            this.labelGestao.Location = new System.Drawing.Point(325, 117);
+            this.labelGestao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelGestao.Name = "labelGestao";
-            this.labelGestao.Size = new System.Drawing.Size(319, 28);
+            this.labelGestao.Size = new System.Drawing.Size(398, 37);
             this.labelGestao.TabIndex = 33;
             this.labelGestao.Text = "CADASTRO DE PRODUÇÃO";
             // 
             // textBoxPlantio
             // 
-            this.textBoxPlantio.Location = new System.Drawing.Point(249, 212);
+            this.textBoxPlantio.Location = new System.Drawing.Point(332, 261);
+            this.textBoxPlantio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPlantio.Name = "textBoxPlantio";
-            this.textBoxPlantio.Size = new System.Drawing.Size(194, 20);
+            this.textBoxPlantio.Size = new System.Drawing.Size(257, 22);
             this.textBoxPlantio.TabIndex = 35;
             this.textBoxPlantio.TextChanged += new System.EventHandler(this.textBoxPlantio_TextChanged);
             // 
             // textBoxColheita
             // 
-            this.textBoxColheita.Location = new System.Drawing.Point(249, 265);
+            this.textBoxColheita.Location = new System.Drawing.Point(332, 326);
+            this.textBoxColheita.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxColheita.Name = "textBoxColheita";
-            this.textBoxColheita.Size = new System.Drawing.Size(194, 20);
+            this.textBoxColheita.Size = new System.Drawing.Size(257, 22);
             this.textBoxColheita.TabIndex = 36;
             this.textBoxColheita.TextChanged += new System.EventHandler(this.textBoxColheita_TextChanged);
             // 
             // textBoxQuantidade
             // 
-            this.textBoxQuantidade.Location = new System.Drawing.Point(249, 320);
+            this.textBoxQuantidade.Location = new System.Drawing.Point(332, 394);
+            this.textBoxQuantidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxQuantidade.Name = "textBoxQuantidade";
-            this.textBoxQuantidade.Size = new System.Drawing.Size(194, 20);
+            this.textBoxQuantidade.Size = new System.Drawing.Size(257, 22);
             this.textBoxQuantidade.TabIndex = 37;
             this.textBoxQuantidade.TextChanged += new System.EventHandler(this.textBoxQuantidade_TextChanged);
             // 
@@ -147,9 +157,10 @@
             // 
             this.buttonConfirmar.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonConfirmar.ForeColor = System.Drawing.Color.MintCream;
-            this.buttonConfirmar.Location = new System.Drawing.Point(249, 373);
+            this.buttonConfirmar.Location = new System.Drawing.Point(332, 459);
+            this.buttonConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonConfirmar.Name = "buttonConfirmar";
-            this.buttonConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfirmar.Size = new System.Drawing.Size(100, 28);
             this.buttonConfirmar.TabIndex = 38;
             this.buttonConfirmar.Text = "Confirmar";
             this.buttonConfirmar.UseVisualStyleBackColor = false;
@@ -159,9 +170,10 @@
             // 
             this.buttonCancelar.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonCancelar.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonCancelar.Location = new System.Drawing.Point(368, 373);
+            this.buttonCancelar.Location = new System.Drawing.Point(491, 459);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancelar.Size = new System.Drawing.Size(100, 28);
             this.buttonCancelar.TabIndex = 39;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = false;
@@ -172,9 +184,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label1.Location = new System.Drawing.Point(246, 147);
+            this.label1.Location = new System.Drawing.Point(328, 181);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 15);
+            this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 40;
             this.label1.Text = "Produto";
             // 
@@ -183,9 +196,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label2.Location = new System.Drawing.Point(246, 194);
+            this.label2.Location = new System.Drawing.Point(328, 239);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 15);
+            this.label2.Size = new System.Drawing.Size(112, 17);
             this.label2.TabIndex = 41;
             this.label2.Text = "Data do Plantio";
             // 
@@ -194,9 +208,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label3.Location = new System.Drawing.Point(246, 247);
+            this.label3.Location = new System.Drawing.Point(328, 304);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 15);
+            this.label3.Size = new System.Drawing.Size(124, 17);
             this.label3.TabIndex = 42;
             this.label3.Text = "Data da Colheita";
             // 
@@ -205,25 +220,27 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label4.Location = new System.Drawing.Point(246, 302);
+            this.label4.Location = new System.Drawing.Point(328, 372);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 15);
+            this.label4.Size = new System.Drawing.Size(89, 17);
             this.label4.TabIndex = 43;
             this.label4.Text = "Quantidade";
             // 
             // textBoxProduto1
             // 
-            this.textBoxProduto1.Location = new System.Drawing.Point(249, 171);
+            this.textBoxProduto1.Location = new System.Drawing.Point(332, 210);
+            this.textBoxProduto1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxProduto1.Name = "textBoxProduto1";
-            this.textBoxProduto1.Size = new System.Drawing.Size(194, 20);
+            this.textBoxProduto1.Size = new System.Drawing.Size(257, 22);
             this.textBoxProduto1.TabIndex = 44;
             this.textBoxProduto1.TextChanged += new System.EventHandler(this.textBoxProduto1_TextChanged);
             // 
             // CadastroProducao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.textBoxProduto1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -236,7 +253,7 @@
             this.Controls.Add(this.textBoxPlantio);
             this.Controls.Add(this.labelGestao);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CadastroProducao";
             this.Text = "CadastroProducao";
             this.panel1.ResumeLayout(false);
